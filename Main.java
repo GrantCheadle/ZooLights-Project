@@ -24,7 +24,7 @@ class Main {
     int monthB = input.nextInt();
     
     System.out.println("Enter the date you were born. Note include zeros if single digit number");
-    int dayB = input.nextInt();
+    String birthDate = input.nextInt();
     
     System.out.println("Enter the year you were born");
     int yearB = input.nextInt();
