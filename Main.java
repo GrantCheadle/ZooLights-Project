@@ -8,11 +8,7 @@ class Main {
     String lastName = input.nextLine();
     
   //Objects
-
-  method fName = new method("Grant");
   
-
-
 
     System.out.println("Enter weekend if it is a weekend or enter weekday if it is a weekend");
     String day = input.nextLine();
@@ -21,22 +17,37 @@ class Main {
     String drive = input.nextLine();
     
     System.out.println("Enter the month number you were born");
-    int monthB = input.nextInt();
-    
-    System.out.println("Enter the date you were born. Note include zeros if single digit number");
-    String birthDate = input.nextInt();
+    String monthB = input.nextLine();
+    if (monthB.length()>2)
+    {
+      
+    }
+    System.out.println("Enter the day you were born.");
+    String dayB= input.nextLine();
     
     System.out.println("Enter the year you were born");
-    int yearB = input.nextInt();
+    String yearB = input.nextLine();
+    
+
+    String dateB=monthB+"/"+dayB+"/"+yearB;
     
     System.out.println("Enter your height in inches: ");
     double height = input.nextDouble();
     
     System.out.println("Enter your weight in lbs: ");
     double weight = input.nextDouble();
-
+    input.nextLine();
     System.out.println("Enter discount code: ");
     String code =input.nextLine();
+    if (code== "MEMBER")
+    {
+      boolean haveCode=true;
+    }
+    else
+    {
+      boolean haveCode=false;
+    }
+
   }
 
 }
